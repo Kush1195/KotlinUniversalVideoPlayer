@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tab_bg"
+        android:layout_width="450px"
+        android:layout_height="450px"
+        android:background="@drawable/folder_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_folder_thumb"
+                android:layout_width="244px"
+                android:layout_height="197px"
+                android:src="@drawable/folder_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/text_bg"
+                android:layout_width="450px"
+                android:layout_height="112px"
+                android:background="#A3000000"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_folder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:text="title"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_folder_size"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="size"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

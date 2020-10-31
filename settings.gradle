@@ -1,0 +1,4 @@
+include ':log'
+include ':vlcplayer'
+include ':app'
+rootProject.name = "KotlinUniversalVideoPlayer"
